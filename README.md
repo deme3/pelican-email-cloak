@@ -23,9 +23,14 @@ PLUGINS = [
 ]
 ```
 
-and place the plugin at `pelican/plugins/email_cloak` in your plugins folder.
+Pelican should automatically discover the plugin after installation under the namespace `pelican.plugins`.
 
 E-mails in articles and pages will be cloaked.
+
+## Changelog
+
+-   0.0.1 up to 0.0.3: Initial release
+    -   Version bumped to update PyPI description
 
 ## License
 
