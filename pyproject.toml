@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pelican-email-cloak"
-version = "0.0.3"
+version = "0.1.0"
 description = "E-mail cloaking plugin for Pelican"
 authors = ["Demetrio Battaglia <deme3.iot@gmail.com>"]
 license = "MIT"
@@ -13,7 +13,7 @@ packages = [
 ]
 
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 5 - Production/Stable",
     "Environment :: Console",
     "Framework :: Pelican",
     "Framework :: Pelican :: Plugins",
