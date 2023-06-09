@@ -22,6 +22,7 @@ class DeobfGenerator(object):
 
 def email_cloak(content: Page):
   all_emails = re.findall(EMAIL_REGEX, content._content)
+  all_emails = [email if not email.endswith(".") else email[:-1] for email in all_emails]
   all_javascriptified_emails = [javascriptify(email, do_scramble=True) for email in all_emails]
 
   # Replace all plaintext e-mails with obfuscated e-mails
