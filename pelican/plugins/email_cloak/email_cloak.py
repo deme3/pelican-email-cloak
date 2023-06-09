@@ -38,10 +38,15 @@ def email_cloak(content: Page):
 def _generator_write(generator, content: Page):
    email_cloak(content)
 
+def _generator_enrich_context(generator):
+    generator.context["javascriptify"] = javascriptify
+
 def get_generators(generators):
   return DeobfGenerator
 
 def register():
   signals.get_generators.connect(get_generators)
+  signals.page_generator_init.connect(_generator_enrich_context)
   signals.page_generator_write_page.connect(_generator_write)
+  signals.article_generator_init.connect(_generator_enrich_context)
   signals.article_generator_write_article.connect(_generator_write)
