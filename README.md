@@ -29,6 +29,7 @@ E-mails in articles and pages will be cloaked.
 
 ## Changelog
 
+-   0.1.0 up to 0.1.2: Added support for custom e-mail body and link caption & subsequent hotfixes
 -   0.0.1 up to 0.0.3: Initial release
     -   Version bumped to update PyPI description
 
